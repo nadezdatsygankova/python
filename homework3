@@ -18,6 +18,34 @@ except TypeError as a:
     print(a)
 except IndexError as a:
     print(a)
+
+#2.Создайте список произвольной длины. Пользователь должен 
+#ввести индекс объекта, который хочет посмотреть. 
+#Если все хорошо - пишите объект в консоль. 
+#Если нет - обработайте возмозможные ошибки и скажите ему, 
+#что не так
+
+list = [1,5,7,8]
+
+try:
+    input_1 = int(input('Please, give me index of object'))
+    if input_1 >= 0:
+        if input_1 >= len (list):
+            raise IndexError('No index')
+    print(list[input_1])       
+except IndexError:
+    print('No index')
+except ValueError:
+    print('Wrong index')  
+    
+  **Задачи на закрепление функций:
+1.Написать функцию, которая принимает на вход два аргумента. Если аргументы больше нуля, 
+возвращаем их сумму. Если оба меньше - разность. Если знаки разные - возвращаем 0
+
+    
+    
+    
+    
     
    
    
