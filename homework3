@@ -1,0 +1,23 @@
+#1.Пользователь вводит число, если оно четное - 
+#выбрасываем исключение ValueError, если оно меньше 0 - TypeError, 
+#если оно больше 10 - IndexError.
+#Обрабатываем ошибку, говорим пользователю, в чем его ошибка
+
+x= int(input())
+try:
+    if x % 2 == 0: 
+        raise ValueError('You have ValueError')  
+    if x < 0:
+        raise TypeError('You have TypeError')
+    if x > 10:
+        raise IndexError('You have IndexError')
+        
+except ValueError as a:
+    print(a)
+except TypeError as a:
+    print(a)
+except IndexError as a:
+    print(a)
+    
+   
+   
